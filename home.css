@@ -1,0 +1,91 @@
+/* Reseta alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    height: 100vh; /* Faz a sidebar ocupar toda a altura da tela */
+    overflow: auto;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    overflow-y: auto; /* Permite rolar verticalmente se o conteúdo exceder o tamanho do contêiner */
+    height: 100vh; /* Faz o main content ocupar toda a altura da tela */
+}
+
+/* Cards */
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 15px); /* Ajusta o tamanho dos cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 150px; /* Ajusta a altura mínima dos cards */
+}
+
+.btn-azul {
+    display: inline-block; /* Faz com que o link se comporte como um botão */
+    padding: 10px 20px;    /* Adiciona espaçamento interno */
+    font-size: 16px;       /* Ajusta o tamanho da fonte */
+    color: white;          /* Define a cor do texto */
+    background-color: #007bff; /* Define a cor de fundo azul */
+    text-align: center;    /* Centraliza o texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px;    /* Adiciona bordas arredondadas */
+    border: 1px solid #007bff; /* Adiciona uma borda azul */
+    transition: background-color 0.3s, border-color 0.3s; /* Efeito de transição */
+}
+
+.btn-azul:hover {
+    background-color: #0056b3; /* Cor de fundo quando o mouse passa por cima */
+    border-color: #0056b3;     /* Cor da borda quando o mouse passa por cima */
+}
+
+#nenhum{
+    text-align: center;
+}
